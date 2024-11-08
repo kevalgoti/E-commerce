@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "orderDate": "12 Aug 2022 - 12:25 am",
+      "orderType": "Home Delivery",
+      "unitPrice": "₦1,225,000.00",
+      "qty": 8,
+      "discount": "₦0.00",
+      "totalValue": "₦50,000.00",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "orderDate": "12 Aug 2022 - 12:25 am",
+      "orderType": "Home Delivery",
+      "unitPrice": "₦1,225,000.00",
+      "qty": 8,
+      "discount": "₦0.00",
+      "totalValue": "₦50,000.00",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "orderDate": "12 Aug 2022 - 12:25 am",
+      "orderType": "Home Delivery",
+      "unitPrice": "₦1,225,000.00",
+      "qty": 8,
+      "discount": "₦0.00",
+      "totalValue": "₦50,000.00",
+      "status": "Completed"
+    }
+  ]
