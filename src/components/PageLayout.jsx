@@ -37,9 +37,9 @@ function PageLayout({ children }) {
       >
         <Sidebar />
       </div>
-      <div className="flex flex-col w-full h-full overflow-x-auto transition-all duration-300">
+      <div className="flex flex-col w-full h-screen overflow-x-auto transition-all duration-300">
         <Header toggleSidebar={toggleSidebar} />
-        <main className="flex-1 overflow-y-auto p-5">
+        <main className="flex-1 p-5">
           <div className="w-full h-full overflow-hidden">{children}</div>
         </main>
       </div>
