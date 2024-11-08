@@ -1,52 +1,74 @@
 [
-    {
-
-      "id": 1,
-      "imageSrc":"images/inventory/iphone.png",
-      "productName": "iPhone 13 Pro",
-      "category": "Gadgets",
-      "unitPrice": "₦1,225,000.00",
-      "inStock": 8,
-      "discount": "₦0.00",
-      "totalValue": "₦50,000.00",
-      "status": "Published",
-      "action": "publish"
-
-    },
-    {
-      "id": 2,
-      "imageSrc":"images/inventory/iphone.png",
-      "productName": "Samsung Galaxy S21",
-      "category": "Gadgets",
-      "unitPrice": "₦850,000.00",
-      "inStock": 15,
-      "discount": "₦5,000.00",
-      "totalValue": "₦40,000.00",
-      "status": "Unpublished",
-      "action": "unPublish"
-    },
-    {
-      "id": 3,
-      "imageSrc":"images/inventory/iphone.png",
-      "productName": "MacBook Pro 16-inch",
-      "category": "Computers",
-      "unitPrice": "₦3,500,000.00",
-      "inStock": 3,
-      "discount": "₦100,000.00",
-      "totalValue": "₦150,000.00",
-      "status": "Published",
-      "action": "publish"
-    },
-    {
-      "id": 4,
-      "imageSrc":"images/inventory/iphone.png",
-      "productName": "Sony WH-1000XM4",
-      "category": "Headphones",
-      "unitPrice": "₦300,000.00",
-      "inStock": 20,
-      "discount": "₦10,000.00",
-      "totalValue": "₦6,000.00",
-      "status": "Unpublished",
-      "action": "unPublish"
-    }
-  ]
+  {
+    "id": 1,
+    "imageSrc": "images/inventory/iphone.png",
+    "productName": "iPhone 13 Pro",
+    "category": "Gadgets",
+    "unitPrice": "₦1,225,000.00",
+    "inStock": 8,
+    "discount": "₦0.00",
+    "totalValue": "₦50,000.00",
+    "status": "Published",
+    "action": "publish"
+  },
+  {
+    "id": 2,
+    "imageSrc": "images/inventory/iphone.png",
+    "productName": "Samsung Galaxy S21",
+    "category": "Gadgets",
+    "unitPrice": "₦850,000.00",
+    "inStock": 15,
+    "discount": "₦5,000.00",
+    "totalValue": "₦40,000.00",
+    "status": "Unpublished",
+    "action": "unPublish"
+  },
+  {
+    "id": 3,
+    "imageSrc": "images/inventory/iphone.png",
+    "productName": "MacBook Pro 16-inch",
+    "category": "Computers",
+    "unitPrice": "₦3,500,000.00",
+    "inStock": 3,
+    "discount": "₦100,000.00",
+    "totalValue": "₦150,000.00",
+    "status": "Published",
+    "action": "publish"
+  },
+  {
+    "id": 4,
+    "imageSrc": "images/inventory/iphone.png",
+    "productName": "Sony WH-1000XM4",
+    "category": "Headphones",
+    "unitPrice": "₦300,000.00",
+    "inStock": 20,
+    "discount": "₦10,000.00",
+    "totalValue": "₦6,000.00",
+    "status": "Unpublished",
+    "action": "unPublish"
+  },
+  {
+    "id": 5,
+    "imageSrc": "images/inventory/iphone.png",
+    "productName": "Sony WH-1000XM4",
+    "category": "Headphones",
+    "unitPrice": "₦300,000.00",
+    "inStock": 20,
+    "discount": "₦10,000.00",
+    "totalValue": "₦6,000.00",
+    "status": "Unpublished",
+    "action": "unPublish"
+  },
+  {
+    "id": 6,
+    "imageSrc": "images/inventory/iphone.png",
+    "productName": "Sony WH-1000XM4",
+    "category": "Headphones",
+    "unitPrice": "₦300,000.00",
+    "inStock": 20,
+    "discount": "₦10,000.00",
+    "totalValue": "₦6,000.00",
+    "status": "Unpublished",
+    "action": "unPublish"
+  }
+]
