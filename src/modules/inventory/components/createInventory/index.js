@@ -13,7 +13,7 @@ const CreateInventory = () => {
   const [coverImage, setCoverImage] = useState(null);
 
   return (
-    <div className="bg-gray-100 space-y-6 text-black">
+    <div className="bg-[#F4F5FA] space-y-6 text-black">
       {/* Header */}
       <div className="flex justify-between items-center">
         <h1 className="text-xl sm:text-sm lg:text-3xl xl:text-[19px]  font-semibold">

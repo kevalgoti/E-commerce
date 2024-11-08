@@ -18,7 +18,7 @@ function ViewInventory() {
 
             <div className="flex flex-col sm:flex-row w-full rounded-xl overflow-hidden mt-5 h-auto sm:h-[145px] gap-4 sm:gap-5">
                 {/* Blue section */}
-                <div className="bg-blue-600 p-4 text-white rounded-md flex-1">
+                <div className="bg-blue-700 p-4 text-white rounded-md flex-1">
                     <img
                         src="/images/inventory/icon.png"
                         alt="inventory icon"
@@ -40,7 +40,7 @@ function ViewInventory() {
                 </div>
 
                 {/* White section */}
-                <div className="bg-gray-200 text-black p-4 rounded-md flex-1">
+                <div className="bg-white text-black p-4 rounded-md flex-1">
                     <div className="flex justify-between items-center pb-2">
                         <div className="text-sm font-medium text-gray-400">
                             <img

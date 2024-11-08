@@ -10,10 +10,10 @@ export default function Header({ toggleSidebar }) {
 
   return (
     <>
-      <header className="text-black sticky top-0 h-[60px] border-b bg-gray-50 flex justify-between items-center px-6 z-10">
+      <header className="text-black sticky top-0 py-[14px] border-b bg-gray-50 flex justify-between items-center px-6 z-10">
         <button
           onClick={toggleSidebar}
-          className="block sm:hidden top-4 p-2 rounded-full bg-blue-500 text-white shadow-lg hover:bg-blue-600 transition-colors"
+          className="block sm:hidden top-4 p-2 rounded-full bg-blue-700 text-white shadow-lg hover:bg-blue-600 transition-colors"
         >
           <FaBars size={24} />
         </button>
@@ -27,11 +27,11 @@ export default function Header({ toggleSidebar }) {
             alt="Profile"
             width={36}
             height={36}
-            className="w-9 h-9 rounded-full bg-gray-200"
+            className="w-9 h-9 rounded-full bg-white"
           />
         </div>
       </header>
-      <div className="text-gray-500 text-sm p-2 flex items-center bg-gray-50">
+      <div className="text-gray-500 text-sm p-2 px-6 flex items-center bg-gray-50">
         <IoMdHome className="text-blue-500" size={24} />
         <span className="ml-3">/</span>
 

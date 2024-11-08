@@ -33,7 +33,7 @@ const AdditionalImagesUploader = ({ additionalImages, setAdditionalImages }) => 
             </div>
           </div>
         ))}
-        <div className="relative border-dotted h-40 bg-gray-100 rounded-xl p-4 flex flex-col border-2 items-center justify-center cursor-pointer">
+        <div className="relative border-dotted h-40 bg-[#F4F5FA] rounded-xl p-4 flex flex-col border-2 items-center justify-center cursor-pointer">
           <input
             type="file"
             multiple

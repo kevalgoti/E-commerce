@@ -1,50 +1,49 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback, useLayoutEffect } from "react";
 import Header from "../components/header/Header";
 import Sidebar from "../components/sideNavbar/SideNavbar";
 
 function PageLayout({ children }) {
   const [isOpen, setIsOpen] = useState(false); // Initially closed on small screens
 
-  // const screenSize = window?.innerWidth;
-  // const isSmallScreen = screenSize <= 768;
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  // useEffect(() => {
-  //   const checkScreenSize = () => {
-  //     const isNowSmallScreen = window.innerWidth <= 768;
-  //     setIsSmallScreen(isNowSmallScreen);
+  useLayoutEffect(() => {
+    const checkScreenSize = () => {
+      const isNowSmallScreen = window.innerWidth <= 640;
+      setIsSmallScreen(isNowSmallScreen);
+    };
 
-  //     if (isNowSmallScreen) {
-  //       setIsOpen(false);
-  //     } else {
-  //       setIsOpen(true);
-  //     }
-  //   };
-
-  //   window.addEventListener("resize", checkScreenSize);
-  //   checkScreenSize(); // Initial check on mount
-  //   return () => window.removeEventListener("resize", checkScreenSize);
-  // }, []);
+    window.addEventListener("resize", checkScreenSize);
+    checkScreenSize(); // Initial check on mount
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   const toggleSidebar = useCallback(() => setIsOpen((prev) => !prev), []);
 
   return (
-    <div className="min-h-screen flex bg-gray-100 overflow-hidden">
+    <div className="min-h-screen flex bg-gray-100 overflow-hidden relative">
       <div
         className={`${
-          isOpen ? "block" : "hidden"
-        } md:block fixed md:relative z-20 bg-white h-full transition-transform duration-300`}
+          isSmallScreen ? "fixed" : "relative"
+        } z-20 bg-white h-full transition-transform duration-300`}
       >
-        <Sidebar />
+        {isSmallScreen && !isOpen ? null : <Sidebar />}
       </div>
-      <div className="flex flex-col w-full h-screen overflow-x-auto transition-all duration-300">
+      <div className="w-full h-screen overflow-x-auto transition-all duration-300">
         <Header toggleSidebar={toggleSidebar} />
         <main className="flex-1 p-5">
           <div className="w-full h-full overflow-hidden">{children}</div>
         </main>
+        {isSmallScreen && isOpen ? (
+          <div
+            className="w-full h-screen absolute z-10 top-0 bg-black bg-opacity-20"
+            onClick={toggleSidebar}
+          ></div>
+        ) : null}
       </div>
     </div>
   );
 }
 
-export default PageLayout;
+export default PageLayout;

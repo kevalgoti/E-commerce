@@ -17,42 +17,40 @@ function Purchases() {
     return (
         <>
             <section className="mt-6 bg-white shadow-md rounded-xl text-black p-4 sm:p-6">
+            <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 w-full">
+                <p className="text-lg font-semibold whitespace-nowrap">Purchases</p>
+                <div className="flex items-center gap-x-[7px] gap-y-2.5 lg:max-w-[523px]">
 
-                <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start sm:space-x-4 space-y-4 sm:space-y-0 w-full">
-                    <p className="text-lg font-semibold">Purchases</p>
-                    <div className="flex flex-wrap sm:flex-row flex-col items-center space-x-0 sm:space-x-4 space-y-2 sm:space-y-0 w-full sm:w-auto justify-between">
-                        <div className="relative w-full sm:w-[300px] md:w-[400px] lg:w-auto max-w-[500px]">
-                            <input
-                                type="text"
-                                placeholder="Search"
-                                className="border border-gray-200 rounded-xl px-10 py-2 w-full"
-                            />
-                            <div className="absolute inset-y-0 left-3 flex items-center">
-                                <MdSearch className="text-gray-500" size={20} />
-                            </div>
-                        </div>
-
-                        <div className="flex sm:space-x-2 space-x-0 space-y-0 sm:space-y-0 w-full sm:w-auto justify-between">
-                            <button className="flex items-center justify-center border border-gray-200 rounded-xl px-4 py-2 space-x-2 sm:w-auto w-full max-w-[40px] sm:max-w-[120px]">
-                                <MdFilterListAlt className="sm:mr-2" />
-                                <span className="hidden sm:block">Filter</span>
-                            </button>
-                            <button className="flex items-center justify-center border border-gray-200 rounded-xl px-4 py-2 space-x-2 sm:w-auto w-full max-w-[40px] sm:max-w-[120px]">
-                                <MdOutlineDateRange className="sm:mr-2" />
-                                <span className="hidden sm:block">Filter</span>
-                            </button>
-                            <button className="flex items-center justify-center border border-gray-200 rounded-xl px-4 py-2 space-x-2 sm:w-auto w-full max-w-[40px] sm:max-w-[120px]">
-                                <CiShare1 className="sm:mr-2" />
-                                <span className="hidden sm:block">Share</span>
-                            </button>
-                            <button className="border border-gray-200 rounded-xl px-4 py-2 sm:w-auto w-full max-w-[40px] sm:max-w-[140px]">
-                                <span className="hidden sm:block">Bulk Action ▼</span>
-                                <span className="sm:hidden">▼</span>
-                            </button>
+                    <div className="relative w-full sm:w-full lg:w-[400px] max-w-[500px]">
+                        <input
+                            type="text"
+                            placeholder="Search"
+                            className="border border-gray-200 px-10 py-2 w-full h-[29px] rounded-[4px] text-xs placeholder:text-xs"
+                        />
+                        <div className="absolute inset-y-0 left-3 flex items-center">
+                            <MdSearch className="text-gray-500" size={20} />
                         </div>
                     </div>
-
+                    <div className="flex w-full gap-x-3">
+                        <button className="flex-1 md:flex-auto flex items-center justify-center border border-gray-200 rounded-[4px] py-[6.5px] px-2  text-[11px] leading-[13px]">
+                            <MdFilterListAlt className="sm:mr-2" />
+                            <span className="hidden sm:block">Filter</span>
+                        </button>
+                        <button className="flex-1 md:flex-auto flex items-center justify-center border border-gray-200 rounded-[4px] py-[6.5px] px-2  text-[11px] leading-[13px]">
+                            <MdOutlineDateRange className="sm:mr-2" />
+                            <span className="hidden sm:block">Filter</span>
+                        </button>
+                        <button className="flex-1 md:flex-auto flex items-center justify-center border border-gray-200 rounded-[4px] py-[6.5px] px-2  text-[11px] leading-[13px]">
+                            <CiShare1 className="sm:mr-2" />
+                            <span className="hidden sm:block">Share</span>
+                        </button>
+                        <button className="whitespace-nowrap flex-1 md:flex-auto flex items-center justify-center border border-gray-200 rounded-[4px] py-[6.5px] px-2  text-[11px] leading-[13px]">
+                            <span className="hidden sm:block">Bulk Action ▼</span>
+                            <span className="sm:hidden">▼</span>
+                        </button>
+                    </div>
                 </div>
+            </div>
 
 
 

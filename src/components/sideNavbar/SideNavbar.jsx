@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const sidebarItems = [
-  { id: 1, bgColor: 'bg-blue-500', imageSrc: '/images/sidebar/logo.png' },
+  { id: 1, bgColor: 'bg-blue-700', imageSrc: '/images/sidebar/logo.png' },
   { id: 2, bgColor: 'bg-gray-300', imageSrc: '/images/sidebar/home.png' },
   { id: 3, bgColor: 'bg-blue-200', imageSrc: '/images/sidebar/shoppingcart.png' },
   { id: 4, bgColor: 'bg-purple-500', imageSrc: '/images/sidebar/user.png' },
@@ -17,7 +17,7 @@ export default function Sidebar() {
   return (
     <>
       <aside
-        className={`top-0 left-0 h-screen w-20 z-50 bg-white justify-between sticky border-r flex flex-col items-center border-gray-200 shadow-lg transform transition-transform md:translate-x-0 pt-0 md:justify-between`}
+        className={`top-0 left-0 h-screen w-20 z-50 bg-white justify-between sticky border-r flex flex-col items-center border-gray-200 shadow-lg transform transition-transform sm:translate-x-0 pt-0 md:justify-between`}
       >
         <nav className="flex flex-col space-y-4 justify-start h-full w-full items-center pt-4">
           {sidebarItems.map((item, index) => (

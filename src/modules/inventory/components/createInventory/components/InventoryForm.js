@@ -1,24 +1,24 @@
 const InventoryForm = ({ discountEnabled, setDiscountEnabled, expiryEnabled, setExpiryEnabled }) => (
   <div className="w-full lg:w-1/3 space-y-6 bg-white p-6 rounded-xl shadow-md">
     {/* Product Name */}
-    <input className="w-full p-3 rounded-md border bg-gray-100 border-gray-300" placeholder="Product Name" />
+    <input className="w-full p-3 rounded-md border bg-[#F4F5FA] border-gray-300" placeholder="Product Name" />
 
     {/* Product Category */}
-    <select className="w-full p-3 rounded-md border bg-gray-100 border-gray-300">
+    <select className="w-full p-3 rounded-md border bg-[#F4F5FA] border-gray-300">
       <option>Select Product Category</option>
     </select>
 
     {/* Selling & Cost Price */}
     <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
-      <input className="w-full p-3 rounded-md border bg-gray-100 border-gray-300" placeholder="Selling Price" />
-      <input className="w-full p-3 rounded-md border bg-gray-100 border-gray-300" placeholder="Cost Price" />
+      <input className="w-full p-3 rounded-md border bg-[#F4F5FA] border-gray-300" placeholder="Selling Price" />
+      <input className="w-full p-3 rounded-md border bg-[#F4F5FA] border-gray-300" placeholder="Cost Price" />
     </div>
 
     {/* Quantity in Stock */}
-    <input className="w-full p-3 rounded-md border bg-gray-100 border-gray-300" placeholder="Quantity in Stock" />
+    <input className="w-full p-3 rounded-md border bg-[#F4F5FA] border-gray-300" placeholder="Quantity in Stock" />
 
     {/* Order Type */}
-    <select className="w-full p-3 rounded-md border bg-gray-100 border-gray-300">
+    <select className="w-full p-3 rounded-md border bg-[#F4F5FA] border-gray-300">
       <option>Order Type</option>
     </select>
 
@@ -31,7 +31,7 @@ const InventoryForm = ({ discountEnabled, setDiscountEnabled, expiryEnabled, set
         <label className="relative inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
-            className="sr-only peer bg-gray-100"
+            className="sr-only peer bg-[#F4F5FA]"
             checked={discountEnabled}
             onChange={() => setDiscountEnabled(!discountEnabled)}
           />
@@ -43,7 +43,7 @@ const InventoryForm = ({ discountEnabled, setDiscountEnabled, expiryEnabled, set
     {/* Discount Inputs */}
     {discountEnabled && (
       <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
-        <select className="w-full lg:w-1/2 p-3 rounded-md border bg-gray-100 border-gray-300">
+        <select className="w-full lg:w-1/2 p-3 rounded-md border bg-[#F4F5FA] border-gray-300">
           <option>Type</option>
           <option>Percentage</option>
           <option>Flat</option>
